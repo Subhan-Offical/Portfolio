@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <div id="background-canvas"></div>
+    <nav id="desktop-nav">
+        <div class="logo">Subhan Official
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Subhan Official</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <!-- Change Profile Pic Here-->
+            <img src="./assets/profile/profile-pic-7.0.jpg" alt="Subhan profile picture" style="border-radius: 12%; margin-bottom: 2rem" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1" style="margin-top: 4rem">
+                <i>Turning data into decisions — that’s my thing🚀</i>
+            </p>
+            <h1 class="title" style="font-size: 2rem">
+                <span style="font-size: 1.75rem; color: rgb(199, 198, 198)">I’m
+          </span>
+                <span class="gradient-text">Muhammad Subhan</span>
+            </h1>
+            <p class="section__text__p2 text-left" style="color: rgb(199, 198, 198); font-size: 1.1rem">
+                I work at the intersection of data and problem-solving — using tools like
+                <strong class="gradient-text">SQL, Python, Excel, and Power BI</strong
+          >
+          to extract insights, support better decisions, and build impactful
+          solutions. Currently growing in the field of
+          <strong class="gradient-text">Data Analytics </strong>I enjoy turning raw data into clear, actionable stories that drive real-world value.
+            </p>
+            <div class="btn-container" style="margin-top: 1.5rem">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+            </div>
+
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/subhan-abbasi-92091b310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZ9QOZDr1QMCLg863Gim2NA%3D%3D" target="_blank">
+            <i class="fab fa-linkedin icon linkedin"></i>
+          </a>
+                <a href="https://github.com/Subhan-Offical" target="_blank">
+            <i class="fab fa-github icon github"></i>
+          </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="title" style="font-size: 1rem">
+            <span class="gradient-text">Get To Know More</span>
+            <br />
+            <span style="font-size: 3rem">About Me</span>
+        </h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <!-- About Pic Update Here -->
+                <img src="./assets/profile/profile-pic-8.0.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3 style="margin-top: 0.5rem">Education</h3>
+                        <br />
+                        <p>B.Sc. Information Technology From<br />Sindh Madressatul Islam University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <!-- About Update Here -->
+                    <p class="font-600 text-left" style="color: rgb(194, 193, 193)">
+                        Currently pursuing my
+                        <strong>Bachelor's in Computer Science from
+                <span class="gradient-text">SMI University<span></strong
+              >, where I’m building a strong foundation in analytics,
+              programming, and real-world problem-solving.
+                </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!-- Skills Section -->
+    <section id="experience" style="margin-top: 4rem">
+        <h1 class="title" style="font-size: 1rem">
+            <span class="gradient-text">Explore My</span>
+            <br />
+            <span style="font-size: 3rem">Technical Skills</span>
+        </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <!-- Skill No 01 -->
+                        <article>
+                            <i class="devicon-python-plain colored"></i>
+                            <div>
+                                <h3 style="padding-top: 1rem">Python</h3>
+                            </div>
+                        </article>
+                        <!-- Skill No 02 -->
+                        <article>
+                            <img src="./assets/power.jfif" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3 style="padding-top: 1rem">Power Bi</h3>
+                            </div>
+                        </article>
+                        <!-- Skill No 03 -->
+                        <article>
+                            <img src="./assets/postgresql-removebg-preview.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3 style="padding-top: 1rem">MySQL</h3>
+                            </div>
+                        </article>
+                        <!-- Skill No 04 -->
+                        <article>
+                            <img src="./assets/excel.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3 style="padding-top: 1rem">Microsoft Excel</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <h1 class="title" style="font-size: 1rem">
+            <span class="gradient-text">Browse My Recent Top Projects</span>
+            <br />
+            <span style="font-size: 3rem">Projects</span>
+        </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <a href="https://github.com/Subhan-Offical/Students-Performance-Analysis"style="text-decoration: none">
+                        <div class="article-container">
+                            <img src="./assets/project-2.0.png" alt="Project 2" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Assessment of Student Performance Metrics 📊📚🎓
+                        </h2>
+                        <p style="color: rgb(179, 179, 179)">
+                            This project presents an in-depth
+                            <strong style="color: #fff">by using Python</strong> and analysis of student performance metrics 📊 by exploring academic data to identify trends, patterns, and insights 📚. The goal is to support data-driven decisions that enhance learning outcomes and academic success 🎓.
+                        </p>
+                    </a>
+                </div>
+                <div class="details-container color-container">
+                    <a href="https://github.com/Subhan-Offical/PowerBI-Project" style="text-decoration: none">
+                        <div class="article-container">
+                            <img src="./assets/project-1.0.png" alt="Project 3" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            HRM Data Analysis 📈
+                        </h2>
+                        <p style="color: rgb(179, 179, 179)">
+                        This HRM data analysis explores employee data from Pakistan 🇵🇰 to uncover workforce behavior and performance trends 📊. Key insights include top-performing departments 🏢, high-retention regions 📍, and gender-based workforce dynamics 👩‍💼👨‍💼.   
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section     -->
+    <section id="contact">
+        <h1 class="title" style="font-size: 1rem">
+            <span class="gradient-text">Get In Touch</span><br />
+            <span style="font-size: 3rem">Contact Me</span>
+        </h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/subhan-abbasi-92091b310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZ9QOZDr1QMCLg863Gim2NA%3D%3D" target="_blank">
+            <i class="fab fa-linkedin icon linkedin"></i>
+          </a>
+            </div>
+            <div class="contact-info-container">
+                <a href="mailto:muhammadsubhaninbox@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope icon"></i>
+          </a>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://github.com/Subhan-Offical" target="_blank">
+            <i class="fab fa-github icon github"></i>
+          </a>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://www.instagram.com/subhanabbasi147?utm_source=qr&igsh=OGJ5MG16cG94YnBv==" target="_blank">
+            <i class="fab fa-instagram icon instagram-icon"></i>
+          </a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
